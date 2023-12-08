@@ -1,0 +1,205 @@
+.section {
+    .section-banner {
+        .banner-image {
+            height: 100vh;
+            background-position: top center;
+            background-size: cover;
+            position: relative;
+            // background-attachment: fixed;
+
+            &:after {
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+
+                // background: url("../images/topgradient.png") bottom repeat-x, linear-gradient(rgba(1,38,26,0) 70%, rgba(1,35,24,1) 90%);
+                background: linear-gradient(rgba(1,38,26,0) 70%, rgba(1,35,24,1) 90%);
+                content: "";
+                z-index: 1;
+            }
+
+            .container {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .banner-text {
+                    color: #f6cd7e;
+                    text-align: center;
+
+                    h1 {
+                        font-family: 'velour-regular', Verdana, Geneva, Tahoma, sans-serif;
+                        font-weight: 400;
+                        letter-spacing: 0;
+                        line-height: 1;
+                        padding-bottom: 30px;
+                        text-align: center;
+                        font-size: 92px;
+                        text-transform: uppercase;
+                    }
+
+                    p {
+                        font-size: 21px;
+                        letter-spacing: 4.2px;
+                        line-height: 21px;
+                        text-transform: uppercase;
+                        font-family: 'BenchNine', Verdana, Geneva, Tahoma, sans-serif;
+                    }
+                }
+            }
+        }
+    }
+
+    .section-about {
+        height: 500px;
+        background: rgb(1,35,24);
+        background: linear-gradient(180deg, rgba(1,35,24,1) 0%, rgba(31,128,83,1) 100%);
+        background-position: center;
+        background-size: cover;
+
+        .text-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: #f6cd7e;
+            text-align: center;
+
+            h1 {
+                font-family: 'velour-bold', Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 56px;
+                text-transform: uppercase;
+                margin-bottom: 32px;
+            }
+    
+            p {
+                font: normal normal normal 16px/24px 'spartan_regular';
+                line-height: 1.4;
+                width: 600px;
+                margin: 0 auto;
+                display: block;
+                text-align: center;
+                letter-spacing: 0px;
+                color: #FFF6D7;
+                opacity: 1;
+            }
+        }
+    }
+
+    .section-tiktok {
+        // height: 800px;
+        // background-image: url('../images/green-bg.png');
+        padding: 48px 0;
+        background: rgb(1,35,24);
+        background: linear-gradient(180deg, rgba(1,35,24,1) 0%, rgba(31,128,83,1) 100%);
+        background-position: center;
+        background-size: cover;
+        color: #f6cd7e;
+        text-align: center;
+
+        .content-text {
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            font-family: 'velour-regular', Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 56px;
+            text-transform: uppercase;
+            margin-bottom: 32px;
+        }
+
+        p {
+            font-family: 'spartan_regular', Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 16px;
+            line-height: 1.4;
+            color: #FFF6D7;
+
+            &.title-video {
+                font-family: 'velour-regular', Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 24px;
+                color: #f6cd7e;
+            }
+        }
+    }
+
+    .section-contact {
+        height: 500px;
+        background: #F7F0E2;
+        background-position: center;
+        background-size: cover;
+        
+        .text-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: #012319;
+            text-align: center;
+
+            h1 {
+                font-family: 'velour-bold', Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 56px;
+                text-shadow: 0 8px 3px rgba(0,0,0,.2);
+                text-transform: uppercase;
+                margin-bottom: 32px;
+            }
+    
+            p {
+                font-family: 'spartan_regular', Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 24px;
+                letter-spacing: 4.2px;
+                line-height: 1.4;
+            }
+        }
+    }
+}
+
+.field {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+    position: absolute;
+    bottom: 24px;
+    z-index: 100;
+
+	.mouse {
+		width: 40px;
+		height: 70px;
+		border: 3px solid #FFF;
+		border-radius: 60px;
+		position: relative;
+	
+		&::before {
+			content: '';
+			width: 8px;
+			height: 8px;
+			position: absolute;
+			top: 10px;
+			left: 50%;
+			transform: translateX(-50%);
+			background-color: #FFF;
+			border-radius: 50%;
+			opacity: 1;
+			animation: wheel 2s infinite;
+			-webkit-animation: wheel 2s infinite;
+		}
+	}
+}
+
+@keyframes wheel {
+	to {
+		opacity: 0;
+		top: 45px;
+	}
+}
+
+@-webkit-keyframes wheel {
+	to {
+		opacity: 0;
+		top: 45px;
+	}
+}
