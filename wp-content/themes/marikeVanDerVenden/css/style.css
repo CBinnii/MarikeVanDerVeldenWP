@@ -19326,7 +19326,9 @@ input:active, input:focus, button:active, button:focus {
           margin-left: 8px;
           background-color: transparent;
           border: none;
-          outline: none; }
+          outline: none;
+          position: relative;
+          z-index: 100; }
           .header .navbar .container .navbar-menu .navbar-toggler:focus {
             text-decoration: none;
             outline: 0;
@@ -19341,7 +19343,7 @@ input:active, input:focus, button:active, button:focus {
               width: 30px;
               height: 3px;
               margin: 6px auto;
-              background-color: #0C1707;
+              background-color: #f6cd7e;
               border-radius: 10px;
               -webkit-transition: 0.3s;
               transition: 0.3s; }
@@ -19365,7 +19367,6 @@ input:active, input:focus, button:active, button:focus {
             height: 50px; }
             @media screen and (max-width: 767px) {
               .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav {
-                box-shadow: 0px -4px 10px rgba(18, 18, 18, 0.2);
                 margin: 0 !important;
                 display: block;
                 height: auto; } }
@@ -19393,9 +19394,9 @@ input:active, input:focus, button:active, button:focus {
               position: absolute;
               width: 100%;
               left: 0;
-              background: #FFFFFF;
+              background: transparent;
               height: auto;
-              top: 100%;
+              top: 16px;
               z-index: 10; } }
 
 .section .section-banner .banner-image {
@@ -19429,12 +19430,18 @@ input:active, input:focus, button:active, button:focus {
         text-align: center;
         font-size: 92px;
         text-transform: uppercase; }
+        @media screen and (max-width: 991px) {
+          .section .section-banner .banner-image .container .banner-text h1, .section .section-banner .banner-image .container .banner-text .h1 {
+            font-size: 42px; } }
       .section .section-banner .banner-image .container .banner-text p {
         font-size: 21px;
         letter-spacing: 4.2px;
         line-height: 21px;
         text-transform: uppercase;
         font-family: 'BenchNine', Verdana, Geneva, Tahoma, sans-serif; }
+        @media screen and (max-width: 991px) {
+          .section .section-banner .banner-image .container .banner-text p {
+            font-size: 14px; } }
 .section .section-about {
   height: 500px;
   background: #012318;
@@ -19453,10 +19460,14 @@ input:active, input:focus, button:active, button:focus {
       font-size: 56px;
       text-transform: uppercase;
       margin-bottom: 32px; }
+      @media screen and (max-width: 991px) {
+        .section .section-about .text-box h1, .section .section-about .text-box .h1 {
+          font-size: 32px; } }
     .section .section-about .text-box p {
       font: normal normal normal 16px/24px 'spartan_regular';
       line-height: 1.4;
       width: 600px;
+      max-width: 100%;
       margin: 0 auto;
       display: block;
       text-align: center;
@@ -19478,15 +19489,24 @@ input:active, input:focus, button:active, button:focus {
     font-size: 56px;
     text-transform: uppercase;
     margin-bottom: 32px; }
+    @media screen and (max-width: 991px) {
+      .section .section-tiktok h1, .section .section-tiktok .h1 {
+        font-size: 32px; } }
   .section .section-tiktok p {
     font-family: 'spartan_regular', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     line-height: 1.4;
     color: #FFF6D7; }
+    @media screen and (max-width: 991px) {
+      .section .section-tiktok p {
+        font-size: 12px; } }
     .section .section-tiktok p.title-video {
       font-family: 'velour-regular', Verdana, Geneva, Tahoma, sans-serif;
       font-size: 24px;
       color: #f6cd7e; }
+      @media screen and (max-width: 991px) {
+        .section .section-tiktok p.title-video {
+          font-size: 16px; } }
 .section .section-contact {
   height: 500px;
   background: #F7F0E2;
@@ -19505,11 +19525,17 @@ input:active, input:focus, button:active, button:focus {
       text-shadow: 0 8px 3px rgba(0, 0, 0, 0.2);
       text-transform: uppercase;
       margin-bottom: 32px; }
+      @media screen and (max-width: 991px) {
+        .section .section-contact .text-box h1, .section .section-contact .text-box .h1 {
+          font-size: 32px; } }
     .section .section-contact .text-box p {
       font-family: 'spartan_regular', Verdana, Geneva, Tahoma, sans-serif;
       font-size: 24px;
       letter-spacing: 4.2px;
       line-height: 1.4; }
+      @media screen and (max-width: 991px) {
+        .section .section-contact .text-box p {
+          font-size: 16px; } }
 
 .field {
   display: flex;

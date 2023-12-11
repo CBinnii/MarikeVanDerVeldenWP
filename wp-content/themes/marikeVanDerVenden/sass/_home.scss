@@ -39,6 +39,10 @@
                         text-align: center;
                         font-size: 92px;
                         text-transform: uppercase;
+
+                        @media screen and (max-width: 991px) {
+                            font-size: 42px;
+                        }
                     }
 
                     p {
@@ -47,6 +51,10 @@
                         line-height: 21px;
                         text-transform: uppercase;
                         font-family: 'BenchNine', Verdana, Geneva, Tahoma, sans-serif;
+
+                        @media screen and (max-width: 991px) {
+                            font-size: 14px;
+                        }
                     }
                 }
             }
@@ -73,12 +81,17 @@
                 font-size: 56px;
                 text-transform: uppercase;
                 margin-bottom: 32px;
+
+                @media screen and (max-width: 991px) {
+                    font-size: 32px;
+                }
             }
     
             p {
                 font: normal normal normal 16px/24px 'spartan_regular';
                 line-height: 1.4;
                 width: 600px;
+                max-width: 100%;
                 margin: 0 auto;
                 display: block;
                 text-align: center;
@@ -90,8 +103,6 @@
     }
 
     .section-tiktok {
-        // height: 800px;
-        // background-image: url('../images/green-bg.png');
         padding: 48px 0;
         background: rgb(1,35,24);
         background: linear-gradient(180deg, rgba(1,35,24,1) 0%, rgba(31,128,83,1) 100%);
@@ -109,6 +120,10 @@
             font-size: 56px;
             text-transform: uppercase;
             margin-bottom: 32px;
+
+            @media screen and (max-width: 991px) {
+                font-size: 32px;
+            }
         }
 
         p {
@@ -117,10 +132,18 @@
             line-height: 1.4;
             color: #FFF6D7;
 
+            @media screen and (max-width: 991px) {
+                font-size: 12px;
+            }
+
             &.title-video {
                 font-family: 'velour-regular', Verdana, Geneva, Tahoma, sans-serif;
                 font-size: 24px;
                 color: #f6cd7e;
+
+                @media screen and (max-width: 991px) {
+                    font-size: 16px;
+                }
             }
         }
     }
@@ -145,6 +168,10 @@
                 text-shadow: 0 8px 3px rgba(0,0,0,.2);
                 text-transform: uppercase;
                 margin-bottom: 32px;
+
+                @media screen and (max-width: 991px) {
+                    font-size: 32px;
+                }
             }
     
             p {
@@ -152,6 +179,10 @@
                 font-size: 24px;
                 letter-spacing: 4.2px;
                 line-height: 1.4;
+
+                @media screen and (max-width: 991px) {
+                    font-size: 16px;
+                }
             }
         }
     }
