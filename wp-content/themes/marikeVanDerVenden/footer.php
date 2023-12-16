@@ -1,9 +1,7 @@
         <footer class="footer">
             <div class="container">
                 <div class="partner">
-                    <p>© 2023 - Marike van der Velden - All rights reserved</p>
-
-                    <p>Gerealiseerd door <a href="http://webwow.nl" target="_blank">WebWoW</a> </p>
+                    <?php echo the_field('text_footer', 'option'); ?>
                 </div>
             </div>
         </footer>
