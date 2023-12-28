@@ -19276,8 +19276,6 @@ input:active, input:focus, button:active, button:focus {
     letter-spacing: 1.7px;
     margin-top: 20px;
     opacity: 1;
-    outline: 1px solid #012318;
-    outline-offset: 2px;
     padding: 10px 15px;
     text-transform: uppercase;
     transition: all .35s ease-in-out;
@@ -19456,7 +19454,7 @@ input:active, input:focus, button:active, button:focus {
     color: #f6cd7e;
     text-align: center; }
     .section .section-about .text-box h1, .section .section-about .text-box .h1 {
-      font-family: 'velour-bold', Verdana, Geneva, Tahoma, sans-serif;
+      font-family: 'velour-regular', Verdana, Geneva, Tahoma, sans-serif;
       font-size: 56px;
       text-transform: uppercase;
       margin-bottom: 32px; }
@@ -19520,7 +19518,7 @@ input:active, input:focus, button:active, button:focus {
     color: #012319;
     text-align: center; }
     .section .section-contact .text-box h1, .section .section-contact .text-box .h1 {
-      font-family: 'velour-bold', Verdana, Geneva, Tahoma, sans-serif;
+      font-family: 'velour-regular', Verdana, Geneva, Tahoma, sans-serif;
       font-size: 56px;
       text-shadow: 0 8px 3px rgba(0, 0, 0, 0.2);
       text-transform: uppercase;
