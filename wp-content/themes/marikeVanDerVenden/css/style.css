@@ -19368,10 +19368,13 @@ input:active, input:focus, button:active, button:focus {
                 margin: 0 !important;
                 display: block;
                 height: auto; } }
-            .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item {
+            .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item {
               height: 100%;
               cursor: pointer; }
-              .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link {
+              .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item.current_page_item .nav-link, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item.current_page_item a, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item.current_page_item .nav-link, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item.current_page_item a {
+                color: #fff6d7; }
+              .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item a, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item .nav-link, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item a {
+                text-decoration: none;
                 height: 100%;
                 display: flex;
                 justify-content: center;
@@ -19385,7 +19388,7 @@ input:active, input:focus, button:active, button:focus {
                 text-transform: uppercase;
                 font-family: 'velour-regular',serif;
                 color: #f6cd7e; }
-                .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link.active, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link.show, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link:hover, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link:focus {
+                .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link.active, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link.show, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link:hover, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link:focus, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item a.active, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item a.show, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item a:hover, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item a:focus, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item .nav-link.active, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item .nav-link.show, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item .nav-link:hover, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item .nav-link:focus, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item a.active, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item a.show, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item a:hover, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item a:focus {
                   color: #fff6d7; }
           @media screen and (max-width: 767px) {
             .header .navbar .container .navbar-menu .navbar-collapse {

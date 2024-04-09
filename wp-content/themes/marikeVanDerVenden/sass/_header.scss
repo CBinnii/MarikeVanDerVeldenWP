@@ -116,11 +116,18 @@
 							height: auto;
 						}
 
-						.nav-item {
+						.nav-item, .menu-item {
 							height: 100%;
 							cursor: pointer;
+
+							&.current_page_item {
+								.nav-link, a {
+									color: #fff6d7;
+								}
+							}
 							
-							.nav-link {
+							.nav-link, a {
+								text-decoration: none;
 								height: 100%;
 								display: flex;
 								justify-content: center;

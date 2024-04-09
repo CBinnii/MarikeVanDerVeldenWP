@@ -18,17 +18,17 @@
                 <div class="container justify-content-end">
                     <div class="navbar-menu">
                         <div class="collapse navbar-collapse" id="navbar-collapse">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link pt-serif active" href="/">Tiktok</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link pt-serif" href="#">Society Service</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link pt-serif" href="#">Escort Bijbel</a>
-                                </li>
-                            </ul>
+                            <?php
+								wp_nav_menu(array(
+									'theme_location' => '',
+									'menu_id' 		 => 'menu', 
+									'container' 	 => false,
+									'menu_class' 	 => '',
+									'items_wrap' 	 => '<ul id="%1$s" class="navbar-nav me-auto mb-2 mb-lg-0 %2$s">%3$s</ul>',
+                                    'add_li_class'   => 'nav-item',
+									'depth' 		 => 2,
+								));
+                            ?>
                         </div>
                         <button class="navbar-toggler">
                             <div class="menu-button" id="menu-button" onclick="menuMobile()">
