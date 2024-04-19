@@ -19405,6 +19405,9 @@ input:active, input:focus, button:active, button:focus {
   background-position: top center;
   background-size: cover;
   position: relative; }
+  @media screen and (max-width: 991px) {
+    .section .section-banner .banner-image {
+      background-position: top left; } }
   .section .section-banner .banner-image:after {
     height: 100%;
     left: 0;
