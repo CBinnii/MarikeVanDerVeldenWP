@@ -19436,7 +19436,8 @@ input:active, input:focus, button:active, button:focus {
         text-transform: uppercase; }
         @media screen and (max-width: 991px) {
           .section .section-banner .banner-image .container .banner-text h1, .section .section-banner .banner-image .container .banner-text .h1 {
-            font-size: 42px; } }
+            font-size: 42px;
+            text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6); } }
       .section .section-banner .banner-image .container .banner-text p {
         font-size: 21px;
         letter-spacing: 4.2px;
@@ -19445,7 +19446,8 @@ input:active, input:focus, button:active, button:focus {
         font-family: 'BenchNine', Verdana, Geneva, Tahoma, sans-serif; }
         @media screen and (max-width: 991px) {
           .section .section-banner .banner-image .container .banner-text p {
-            font-size: 14px; } }
+            font-size: 14px;
+            text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6); } }
 .section .section-about {
   height: 500px;
   background: #012318;
@@ -19478,6 +19480,9 @@ input:active, input:focus, button:active, button:focus {
       letter-spacing: 0px;
       color: #FFF6D7;
       opacity: 1; }
+      .section .section-about .text-box p a {
+        color: #FFF6D7;
+        font-weight: 500; }
 .section .section-tiktok {
   padding: 48px 0;
   background: #012318;
@@ -19488,6 +19493,11 @@ input:active, input:focus, button:active, button:focus {
   text-align: center; }
   .section .section-tiktok .content-text {
     margin-bottom: 24px; }
+    .section .section-tiktok .content-text.height {
+      height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
   .section .section-tiktok h1, .section .section-tiktok .h1 {
     font-family: 'velour-regular', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 56px;

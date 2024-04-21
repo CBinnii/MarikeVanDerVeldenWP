@@ -46,6 +46,7 @@
 
                         @media screen and (max-width: 991px) {
                             font-size: 42px;
+                            text-shadow: 0px 0px 5px rgba(0,0,0,0.6);
                         }
                     }
 
@@ -58,6 +59,7 @@
 
                         @media screen and (max-width: 991px) {
                             font-size: 14px;
+                            text-shadow: 0px 0px 5px rgba(0,0,0,0.6);
                         }
                     }
                 }
@@ -102,6 +104,11 @@
                 letter-spacing: 0px;
                 color: #FFF6D7;
                 opacity: 1;
+
+                a {
+                    color: #FFF6D7;
+                    font-weight: 500;
+                }
             }
         }
     }
@@ -117,6 +124,13 @@
 
         .content-text {
             margin-bottom: 24px;
+
+            &.height {
+                height: 68px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
         }
 
         h1 {

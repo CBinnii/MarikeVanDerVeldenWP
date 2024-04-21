@@ -60,7 +60,7 @@
                             ?>
                                 <div class="col-md-3 mb-4">
                                     <div class="tiktok-video">
-                                        <div class="content-text">
+                                        <div class="content-text height">
                                             <p class="title-video"><?php echo $tiktok_title ?></p>
                                         </div>
                                         <div>
