@@ -30,9 +30,18 @@
                 align-items: center;
                 justify-content: center;
 
+                @media screen and (max-width: 991px) {
+                    background: rgba(0, 0, 0, 0.5);
+                    padding: 0;
+                }
+
                 .banner-text {
                     color: #f6cd7e;
                     text-align: center;
+
+                    @media screen and (max-width: 991px) {
+                        padding: 0 15px;
+                    }
 
                     h1 {
                         font-family: 'velour-regular', Verdana, Geneva, Tahoma, sans-serif;
@@ -46,7 +55,7 @@
 
                         @media screen and (max-width: 991px) {
                             font-size: 42px;
-                            text-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+                            text-shadow: 0px 0px 20px rgba(0,0,0,1);
                         }
                     }
 
@@ -59,7 +68,7 @@
 
                         @media screen and (max-width: 991px) {
                             font-size: 14px;
-                            text-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+                            text-shadow: 0px 0px 20px rgba(0,0,0,1);
                         }
                     }
                 }
@@ -82,7 +91,7 @@
             color: #f6cd7e;
             text-align: center;
 
-            h1 {
+            h2 {
                 font-family: 'velour-regular', Verdana, Geneva, Tahoma, sans-serif;
                 font-size: 56px;
                 text-transform: uppercase;
@@ -121,6 +130,7 @@
         background-size: cover;
         color: #f6cd7e;
         text-align: center;
+        text-decoration: none;
 
         .content-text {
             margin-bottom: 24px;
@@ -133,7 +143,11 @@
             }
         }
 
-        h1 {
+        .tiktok-video {
+            text-decoration: none;
+        }
+
+        h3 {
             font-family: 'velour-regular', Verdana, Geneva, Tahoma, sans-serif;
             font-size: 56px;
             text-transform: uppercase;
@@ -141,6 +155,18 @@
 
             @media screen and (max-width: 991px) {
                 font-size: 32px;
+            }
+        }
+
+        .img-thumbnail {
+            background-position: center top;
+            background-size: cover;
+            margin-bottom: 32px;
+            border-radius: 8px;
+
+            img {
+                max-width: 100%;
+                border-radius: 8px;
             }
         }
 
@@ -180,7 +206,7 @@
             color: #012319;
             text-align: center;
 
-            h1 {
+            h3 {
                 font-family: 'velour-regular', Verdana, Geneva, Tahoma, sans-serif;
                 font-size: 56px;
                 text-shadow: 0 8px 3px rgba(0,0,0,.2);
@@ -202,6 +228,33 @@
                     font-size: 16px;
                 }
             }
+        }
+    }
+
+    .section-faq {
+        .faq-title {
+            background: #012318;
+            background: linear-gradient(180deg, rgba(1,35,24,1) 0%, rgba(31,128,83,1) 100%);
+            padding: 56px 0;
+
+            h3 {
+                font-family: 'velour-regular', Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 56px;
+                text-shadow: 0 8px 3px rgba(0,0,0,.2);
+                text-transform: uppercase;
+                margin-bottom: 0;
+                color: #f6cd7e;
+                text-align: center;
+
+                @media screen and (max-width: 991px) {
+                    font-size: 32px;
+                }
+            }
+        }
+
+        .faq {
+            padding: 56px 0;
+            background: #F7F0E2;
         }
     }
 }

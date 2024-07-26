@@ -4,8 +4,10 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home - Marike van der Velden</title>
-        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+        <meta name="description" content="<?php echo the_field('meta_description', 'option'); ?>">
+        <meta name="keywords" content="<?php echo the_field('meta_key', 'option'); ?>">
+        <title>Marike van der Velden</title>
+        <link rel="icon" type="image/x-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.png">
         <?php wp_head(); ?>
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
