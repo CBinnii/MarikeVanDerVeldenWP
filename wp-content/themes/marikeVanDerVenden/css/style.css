@@ -19237,7 +19237,7 @@ input:active, input:focus, button:active, button:focus {
 
 .single {
   padding: 100px 0;
-  background-color: #F7F0E2; }
+  background-color: #FFFFFF; }
   .single .section {
     color: #012319; }
     .single .section h1, .single .section .h1, .single .section h2, .single .section .h2, .single .section h3, .single .section .h3, .single .section h4, .single .section .h4, .single .section h5, .single .section .h5, .single .section h6, .single .section .h6 {
@@ -19721,5 +19721,8 @@ input:active, input:focus, button:active, button:focus {
 
 .primary {
   color: #1F8053; }
+
+#embed-video-container {
+  background-color: #F7F0E2 !important; }
 
 /*# sourceMappingURL=style.css.map */

@@ -74,7 +74,7 @@
                                                 <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id(), 'full');?>" alt="">
                                             </div>
                                             <div class="content-text">
-                                                <?php echo apply_filters('the_content', $post->post_content); ?>
+                                                <p><?php echo get_the_excerpt($post->ID); ?></p>
                                             </div>
                                         </a>
                                     </div>
@@ -82,7 +82,7 @@
                             </div>
 
                             <div class="button">
-                                <a href="/tiktok" target="_blank" class="button-gold">
+                                <a href="<?php echo get_home_url(); ?>/tiktok" target="_blank" class="button-gold">
                                     Bekijk ze allemaal
                                 </a>
                             </div>
